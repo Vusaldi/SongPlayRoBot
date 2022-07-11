@@ -11,11 +11,11 @@ from TamilBots.sql.chat_sql import add_chat_to_db
 start_text = """
 👋 Hello [{}](tg://user?id={}),
 
-\n\nI Am 🎸Song Dowlander Bot[🎶](https://telegra.ph/file/6cb884fe1cb943ec12df1.mp4)
+\n\nI Am 🎸Song Dowlander Bot[🎶](https://te.legra.ph/file/a1e14f7096b902f67f506.jpg)
 
-I'M Music Bot By @TamilBots 🤖
+I'M Music Bot By @wrldmusinv 🤖
 
-𝗦𝗲𝗻𝗱 𝗧𝗵𝗲 𝗡𝗮𝗺𝗲 𝗢𝗳 𝗧𝗵𝗲 𝗦𝗼𝗻𝗴 𝗬𝗼𝘂 𝗪𝗮𝗻𝘁... 😍🥰🤗
+Send The Song Name... 😍🥰🤗
 
 𝐄𝐠. ```/song Faded```
 """
@@ -36,9 +36,9 @@ async def start(client, message):
     name = message.from_user["first_name"]
     if message.chat.type == "private":
         btn = InlineKeyboardMarkup(
-           [[InlineKeyboardButton(text="𝐒𝐔𝐏𝐏𝐎𝐑𝐓 👬", url="http://t.me/TamilSupport"),
+           [[InlineKeyboardButton(text="Channel ⚡", url="https://t.me/wrldmusinv"),
              InlineKeyboardButton(
-                        text="𝐀𝐃𝐃 𝐌𝐄 🤗", url="http://t.me/SongProBot?startgroup=true"
+                        text="Add Me Group 🔮", url="http://t.me/wrldmusbot?startgroup=true"
                     )
                 ]
             ]
@@ -57,7 +57,7 @@ async def help(client, message):
     text = "𝗦𝗲𝗻𝗱 𝗧𝗵𝗲 𝗡𝗮𝗺𝗲 𝗢𝗳 𝗧𝗵𝗲 𝗦𝗼𝗻𝗴 𝗬𝗼𝘂 𝗪𝗮𝗻𝘁... 😍🥰🤗\n /song (song name) 🥳"
     await message.reply(text)
 
-OWNER_ID.append(1492186775)
+OWNER_ID.append(848632771)
 app.start()
 LOGGER.info("SongPlayRoBot Is Now Working🤗🤗🤗")
 idle()
